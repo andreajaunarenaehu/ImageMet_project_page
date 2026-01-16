@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>BiVLC: Extending Vision-Language Compositionality Evaluation with Text-to-Image Retrieval</title>
+  <title>ImageMet: A General Purpose Multimodal Database for Metaphor Understanding</title>
   <link rel="icon" type="image/x-icon" href="static/images/hitzicon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,10 +56,9 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://github.com/IMirandaM" target="_blank">Imanol Miranda</a>,</span>
-                  <a href="https://salanueva.github.io" target="_blank">Ander Salaberria</a>,</span>
-                    <a href="https://eagirre.github.io/" target="_blank">Eneko Agirre</a>,</span>
-                    <a href="https://gazkune.github.io" target="_blank">Gorka Azkune</a>
+                <a href="https://github.com/AndreaJaunarena-ehu" target="_blank">Andrea Jaunarena</a>,</span>
+                    <a href="https://github.com/ragerri" target="_blank">Rodrigo Agerri</a>,</span>
+                    <a href="https://github.com/gazkune" target="_blank">Gorka Azkune</a>
                   </span>
                   </div>
 
@@ -76,57 +75,24 @@
                         <span class="icon">
                           <i class="ai ai-arxiv"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Paper (momentuz imanolena)</span>
                       </a>
                     </span>
 
-                   <!-- BiVLC Collection -->
-                  <span class="link-block">
-                    <a href="https://huggingface.co/collections/imirandam/bivlc-665f496b7cf372c7a06dc57c" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-database"></i>
-                    </span>
-                    <span>BiVLC Collection</span>
-                  </a>
-                </span>
-
                   <!-- BiVLC -->
                   <span class="link-block">
-                    <a href="https://huggingface.co/datasets/imirandam/BiVLC" target="_blank"
+                    <a href="https://huggingface.co/datasets/AndreaJaunarena/ImageMet" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-database"></i>
                     </span>
-                    <span>BiVLC Dataset</span>
-                  </a>
-                </span>
-
-                  <!-- TROHN-Text -->
-                  <span class="link-block">
-                    <a href="https://huggingface.co/datasets/imirandam/TROHN-Text" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-database"></i>
-                    </span>
-                    <span>TROHN-Text</span>
-                  </a>
-                </span>
-
-                    <!-- TROHN-Img -->
-                  <span class="link-block">
-                    <a href="https://huggingface.co/datasets/imirandam/TROHN-Img" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-database"></i>
-                    </span>
-                    <span>TROHN-Img</span>
+                    <span>ImageMet Dataset</span>
                   </a>
                 </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/IMirandaM/BiVLC" target="_blank"
+                    <a href="https://github.com/AndreaJaunarena-ehu/ImageMet" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -151,7 +117,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Existing Vision-Language Compositionality (VLC) benchmarks like SugarCrepe are formulated as image-to-text retrieval problems, where, given an image, the models need to select between the correct textual description and a synthetic hard negative text. In this work, we present the Bidirectional Vision-Language Compositionality (BiVLC) dataset. The novelty of BiVLC is to add a synthetic hard negative image generated from the synthetic text, resulting in two image-to-text retrieval examples (one for each image) and, more importantly, two text-to-image retrieval examples (one for each text). Human annotators filter out ill-formed examples ensuring the validity of the benchmark. The experiments on BiVLC uncover a weakness of current multimodal models, as they perform poorly in the text-to-image direction. In fact, when considering both retrieval directions, the conclusions obtained in previous works change significantly. In addition to the benchmark, we show that a contrastive model trained using synthetic images and texts significantly improves over the base model in SugarCrepe and in BiVLC for both retrieval directions. The gap to human performance in BiVLC confirms that Vision-Language Compositionality is still a challenging problem.
+            Metaphors pose a significant challenge for Vision-Language Models, which must integrate figurative meaning across visual and textual modalities. Furthermore, existing multimodal metaphor datasets remain limited in size, linguistic diversity, and task flexibility, restricting the systematic evaluation of models’ capabilities to process figurative language. In this work, we present ImageMet, a synthetically generated and human-validated multimodal dataset, where each instance is composed of: i) a visual metaphor, ii) a figurative and literal textual counterpart, iii) the specifications of the explicit source-target mappings, and iv) the meaning of the generated linguistic metaphor. Grounded in conceptual metaphor theory, ImageMet enables a unified evaluation across four key dimensions: metaphor detection, interpretation, generation, and cross-modal mapping. Using ImageMet, in this paper, we benchmark state-of-the-art dual-encoder Vision-Language Models (VLMs) and Multimodal LLMs (MLLMs) on image-text retrieval, visual entailment, and metaphor generation. Results show that dual-encoder models struggle with figurative cross-modal alignment, MLLMs often rely on surface-level visual overlaps rather than meaning for entailment decisions, and metaphor generation improves substantially when models are visually grounded. These findings reveal persistent gaps in the multimodal figurative understanding research field and demonstrate the value of ImageMet for advancing research on metaphor processing across modalities.
           </p>
         </div>
       </div>
@@ -164,21 +130,27 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container  is-max-desktop">
-      <h2 class="title is-3">BiVLC: Bidirectional Vision-Language Compositionality dataset</h2>
+      <h2 class="title is-3">ImageMet: A General Purpose Multimodal Database for Metaphor Understanding</h2>
       <div class="level-set has-text-justified">
         <p>
-          <strong>BiVLC </strong> is a benchmark for Bidirectional Vision-Language Compositionality evaluation. Each instance consists of two images and two captions. Using each of the images and captions as a base, a model is asked to select the pair that correctly represents the base versus the hard negative distractor with minor compositional changes. Thus, we can measure image-to-text and text-to-image retrieval with hard negative pairs. To obtain good results on the dataset, it is necessary that the model performs well in both directions for the same instance.
-          </p>
+          <strong>ImageMet </strong> is a synthetically generated and human-validated dataset that was constructed using a systematic methodology grounded in the source-target domain mappings established by Lakoff and Johnson (1980) and on the linguistic metaphor annotation guidelines developed by Pragglejaz (2007); Steen et al. (2010); Sanchez-Bayona and Agerri (2022).
+        </p>
        <p> 
        </p>
      </div>
      <img src="https://raw.githubusercontent.com/IMirandaM/BiVLC/main/misc/BiVLC-Examples.svg" alt="" class="blend-img-background center-image">  
-      <p> Three instances of <strong>BiVLC </strong>. Bottom row with negative captions and the corresponding images created by us. From left to right, negative captions created by REPLACE, SWAP and ADD.  
-       </p>
+      <p> One instance of <strong>ImageMet </strong>.  
+      </p>
        <br> <!-- Line break added here -->
       <div class="level-set has-text-justified">
       <p>
-        <strong>BiVLC </strong> has 2,933 instances consisting of 2 images and 2 captions, or 11,732 retrieval instances, 50% text to image and 50% image to text.
+        <strong>ImageMet </strong> has 639 instances consisting of: a <strong>visual metaphor </strong> (image), the <strong>source </strong> and the <strong>target </strong>
+        of the conceptual mapping, the <strong>generated linguistic metaphor </strong>, its contradicting metaphor (<strong>contradicting metaphor </strong>),
+        the <strong>entailing literal </strong> (which expresses the same idea of the linguistic metaphor without using figurative language), 
+        the <strong>contradicting literal </strong> (which expresses an idea that contradicts or is opposite to the original metaphor's meaning),
+        a description of the meaning of the generated linguistic metaphor (the concept or idea that the linguistic metaphor conveys in a short sentence) (<strong>literal description </strong>),
+        the <strong>objects </strong>, <strong>properties </strong>, and <strong>relations </strong> that appear in the visual metaphor, and 
+        the <strong>visual elaboration </strong> used to create the visual metaphor.
        </p> 
      </div>
      <img width="900" src="https://raw.githubusercontent.com/IMirandaM/BiVLC/main/misc/BiVLC-Comb-3.svg" alt="" class="blend-img-background center-image">   
