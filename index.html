@@ -159,14 +159,14 @@
         <br>
         <p>
           As a result, systematic evaluation of multimodal metaphor understanding is still missing. 
-          To address this gap, ImageMet: 
+          <strong>To address this gap</strong>, ImageMet: 
           <ol class="ml-6">
-            <li>Supports evaluation across multiple tasks, without varying the dataset size.</li>
-            <li>Includes linguistic metaphors grounded in established theoretical frameworks, such as conceptual metaphor theory
+            <li>Supports <strong>evaluation across multiple tasks</strong>, without varying the dataset size.</li>
+            <li>Includes <strong>linguistic metaphors grounded in</strong> established theoretical frameworks, such as <strong>conceptual metaphor theory</strong>
               as proposed by Lakoff and Johnson (1980).</li>
-            <li>Has 639 unique textual and visual representations.</li>
-            <li>Includes metaphorical expressions of varied length and linguistic complexity.</li>
-            <li>Contains literal textual counterparts for each metaphor, which capture the intended meaning of the metaphor. That way, 
+            <li>Has 639 <strong>unique</strong> textual and visual representations.</li>
+            <li>Includes metaphorical expressions of <strong>varied length</strong> and <strong>linguistic complexity</strong>.</li>
+            <li>Contains <strong>literal textual counterparts for each metaphor</strong>, which capture the intended meaning of the metaphor. That way, 
             we can test models whether they comprehend metaphorical meaning or just rely on surface-level formal patterns.</li>
           </ol>
         </p>
@@ -211,34 +211,37 @@
       <br>
       <h2 class="title is-2">What tasks does ImageMet support?</h2>
       <div class="level-set has-text-justified">
-        ImageMet enables evaluation across four key dimensions of metaphor understanding: (1) metaphor detection, (2) metaphor generation,
-        (3) metaphor interpretation, and (4) cross-modal mapping. 
+        ImageMet enables <strong>evaluation</strong> across <strong>four key dimensions</strong> of metaphor understanding: (1) <strong>metaphor detection</strong>, 
+        (2) <strong>metaphor generation</strong>, (3) <strong>metaphor interpretation</strong>, and 
+        (4) <strong>cross-modal mapping</strong>. 
         <br>
-        However, in this paper, three representative tasks are benchmarked: (i) image-text retrieval, (ii) visual entailment, and (iii) metaphor generation. 
+        However, in this paper, <strong>three</strong> representative <strong>tasks</strong> are benchmarked: 
+        (I) <strong>image-text retrieval</strong>, (ii) <strong>visual entailment</strong>, and 
+        (iii) <strong>metaphor generation</strong>. 
       </div>
       <br>
       <h2 class="title is-2">Main findings</h2>
       <div class="level-set has-text-justified">
-        <p>Experiments on state-of-the-art VLMs and MLLMs reveal clear limitations:</p>
+        <p>Experiments on state-of-the-art VLMs and MLLMs reveal clear <strong>limitations</strong>:</p>
          <ol class="ml-6">
            <li><strong>Image-text retrieval:</strong></li>
              <ol class="ml-6">
-               <li>Retrieval tasks become more challenging in the presence of metaphorical instances.</li>
-               <li>Models performing best on traditional multimodal datasets (e.g, COCO) 
-                 tend to achieve the lowest scores on equivalent tasks involving metaphorical language and image</li>
+               <li>Retrieval tasks become more <strong>challenging</strong> in the presence of <strong>metaphorical instances</strong>.</li>
+               <li>Models performing <strong>best</strong> on <strong>traditional multimodal datasets</strong> (e.g, COCO) 
+                 tend to achieve the <strong>lowest</strong> scores on equivalent tasks involving <strong>metaphorical language and image</strong>. </li>
                <li> VLMs cross-modal matching between visual metaphors and their counterpart textual instances rely
-                 more heavily on form-based cues than on semantic meaning.</li>
+                 more heavily on <strong>form-based cues</strong> than on <strong>semantic meaning</strong>.</li>
              </ol>
            <li><strong>Visual entailment:</strong></li>
              <ol class="ml-6">
-               <li>Models obtain higher accuracy on figurative hypotheses than on literal ones, 
+               <li>Models obtain <strong>higher accuracy</strong> on <strong>figurative hypotheses</strong> than on literal ones, 
                suggesting they focus on surface-level overlap of visual elements between
               images and figurative texts instead of the semantic meaning of the visual entailment components. </li>
              </ol>
            <li><strong>Metaphor generation:</strong></li>
              <ol class="ml-6">
-               <li>MLLMs generate significantly better metaphors when visually grounded (supported with a visual metaphor).</li>
-               <li>Visual metaphors act as a conceptual scaffold, improving creativity and coherence.</li>
+               <li>MLLMs generate significantly <strong>better metaphors when visually grounded</strong> (supported with a visual metaphor).</li>
+               <li><strong>Visual metaphors</strong> act as a conceptual <strong>scaffold</strong>, improving creativity and coherence.</li>
              </ol>
          </ol>
       </div>
