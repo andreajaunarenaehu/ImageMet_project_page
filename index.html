@@ -142,6 +142,7 @@
          and cross-modal mapping. 
        </p>
      </div> 
+      <br>
       <h2 class="title is-2">Why ImageMet?</h2>
       <div class="level-set has-text-justified">
         <p>
@@ -154,6 +155,7 @@
             <li>Lack of publicly available data.</li>
           </ol>
         </p>
+        <br>
         <p>
           As a result, systematic evaluation of multimodal metaphor understanding is still missing. 
           To address this gap, ImageMet: 
@@ -168,7 +170,8 @@
           </ol>
         </p>
       </div>
-       <br> <!-- Line break added here -->
+       <br> 
+      <h2 class="title is-2">What does an ImageMet instance contain?</h2>
       <div class="level-set has-text-justified">
       <p>
         <strong>ImageMet </strong> has 639 instances consisting of: 
@@ -184,7 +187,28 @@
           <li>the <strong>objects </strong>, <strong>properties </strong>, and <strong>relations </strong> that appear in the visual metaphor, and</li>
           <li>the <strong>visual elaboration </strong> used to create the visual metaphor.</li>
         </ol> 
-     </div>  
+     </div> 
+      <br>
+      <h2 class="title is-2">How was ImageMet built?</h2>
+      <div class="level-set has-text-justified">
+        <p>
+          ImageMet was created using a semi-automated, human-validated pipeline grounded in linguistic theory:
+          <ol class="ml-6">
+          <li><strong>Conceptual mappings </strong> collected from the Master Metaphor list.</li>
+          <li><strong>Text generation</strong> (generated linguistic metaphor, contradicting metaphor, entailing literal and contradicting literal) prompting
+          Claude. </li>
+          <li><strong>Visual elaborations </strong> creation from generated linguistic metaphors.</li>
+          <li><strong>Visual metaphors </strong> from visual elaborations.</li>
+          <li><strong>Humman annotation </strong>  and filtering by expert annotators.</li>
+        </ol>
+        After validations, the dataset contains 639 high-quality multimodal metaphor instances.
+        </p>
+      </div>
+      <br>
+      <h2 class="title is-2">What tasks does ImageMet support?</h2>
+      <div class="level-set has-text-justified">
+        
+      </div>
       </p></div>
    </div>
 </section>
